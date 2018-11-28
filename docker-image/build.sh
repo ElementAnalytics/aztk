@@ -26,6 +26,14 @@ docker push aztk/spark:v0.1.0-spark2.2.0-base
 docker build base/spark2.3.0/ --tag aztk/spark:v0.1.0-spark2.3.0-base > out/base-spark2.3.0.out &&
 docker push aztk/spark:v0.1.0-spark2.3.0-base
 
+# alpine-base 2.2.0
+docker build alpine-base/spark2.2.0/ --tag aztk/spark:v0.1.0-spark2.2.0-alpine-base > out/alpine-base-spark2.2.0.out &&
+docker push aztk/spark:v0.1.0-spark2.2.0-alpine-base
+
+# alpine-base 2.3.0
+docker build alpine-base/spark2.3.0/ --tag aztk/spark:v0.1.0-spark2.3.0-alpine-base > out/alpine-base-spark2.3.0.out &&
+docker push aztk/spark:v0.1.0-spark2.3.0-alpine-base
+
 # miniconda-base 1.6.3
 docker build miniconda/spark1.6.3/base/ --tag aztk/spark:v0.1.0-spark1.6.3-miniconda-base > out/miniconda-spark1.6.3.out &&
 docker push aztk/spark:v0.1.0-spark1.6.3-miniconda-base
