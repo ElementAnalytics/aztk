@@ -96,14 +96,9 @@ RUN apt-get clean \
                     "</exclusions> " \
                     "</dependency>" \
                     "<dependency>" \
-                        "<groupId>com.microsoft.sqlserver</groupId>" \
-                        "<artifactId>mssql-jdbc</artifactId>" \
-                        "<version>6.4.0.jre8</version>" \
-                    "</dependency>" \
-                    "<dependency>" \
                         "<groupId>com.microsoft.azure</groupId>" \
                         "<artifactId>azure-storage</artifactId>" \
-                        "<version>2.2.0</version>" \
+                        "<version>5.4.0</version>" \
                         "<exclusions>" \
                             "<exclusion>" \
                                 "<groupId>com.fasterxml.jackson.core</groupId>" \
@@ -118,29 +113,6 @@ RUN apt-get clean \
                                 "<artifactId>slf4j-api</artifactId>" \
                             "</exclusion>" \
                         "</exclusions>" \
-                    "</dependency>" \
-                    "<dependency>" \
-                        "<groupId>com.microsoft.azure</groupId>" \
-                        "<artifactId>azure-cosmosdb-spark_2.2.0_2.11</artifactId>" \
-                        "<version>1.1.1</version>" \
-                        "<exclusions>" \
-                            "<exclusion>" \
-                                "<groupId>org.apache.tinkerpop</groupId>" \
-                                "<artifactId>tinkergraph-gremlin</artifactId>" \
-                            "</exclusion>" \
-                            "<exclusion>" \
-                                "<groupId>org.apache.tinkerpop</groupId>" \
-                                "<artifactId>spark-gremlin</artifactId>" \
-                            "</exclusion>" \
-                            "<exclusion>" \
-                                "<groupId>io.netty</groupId>" \
-                                "<artifactId>*</artifactId>" \
-                            "</exclusion>" \
-                            "<exclusion>" \
-                                "<groupId>com.fasterxml.jackson.core</groupId>" \
-                                "<artifactId>jackson-annotations</artifactId>" \
-                            "</exclusion>" \
-                        "</exclusions> " \
                     "</dependency>" \
                 "</dependencies>" \
             "</project>" > /tmp/pom.xml \
